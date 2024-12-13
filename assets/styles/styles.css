@@ -34,9 +34,14 @@ html[data-theme='light'] .brand__logo {
 }
 
 html[data-theme='light'] .technologies__logo {
-  filter: invert(80%);
+  filter: invert(10%);
+  filter: brightness(1.2);
+  
 }
+html[data-theme='dark'] .technologies__saturation{
 
+  filter: grayscale(100%) brightness(50%);
+}
 * {
   margin: 0;
   padding: 0;
@@ -208,6 +213,7 @@ p {
   
   .menu--social {
     gap: 1rem;
+    margin-bottom: 6rem;
   }
 
   .btn {
@@ -304,6 +310,7 @@ p {
     height: 2.4rem;
   }
 
+  
   .projects {
     display: flex;
     flex-direction: column;
@@ -327,6 +334,7 @@ p {
     border-radius: 0.5rem;
     object-fit: cover;
     object-position: center;
+    
   }
   
   .card__body {
@@ -680,11 +688,12 @@ p {
     }
   
     main {
-      padding: 12rem 15rem 2rem;
+      padding: 30rem 15rem 2rem;
     }
     
     .technologies, .projects, .about {
       padding: 10rem 15rem 4rem;
     }
-  
+
+    
   }
